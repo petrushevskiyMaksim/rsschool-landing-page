@@ -1,0 +1,30 @@
+@use 'placeholders';
+
+@mixin font($size: 1.6rem, $weight: 400, $height: 150%, $style: normal) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    font-style: $style;
+}
+
+@mixin link-underline($height: 2px, $offset: 0) {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 100%;
+        margin-top: $offset;
+        width: 100%;
+        height: $height;
+        background-color: currentColor;
+        transform: scaleX(0);
+        transform-origin: left;
+        @extend %transition;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+    }
+}

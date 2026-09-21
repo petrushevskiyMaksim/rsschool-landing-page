@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}

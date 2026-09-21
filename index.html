@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="/src/style/style.scss" />
+        <title>langing_page</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__wrapper">
+                    <a href="./" class="logo">
+                        <svg class="logo-icon">
+                            <use href="#icon-logo"></use>
+                        </svg>
+                    </a>
+                    <nav class="navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#footer">Favorite coffee</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">About</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Mobile app</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="theme-switcher">
+                        <span class="theme-switcher__light">
+                            <svg width="22" height="22">
+                                <use href="#icon-light"></use>
+                            </svg>
+                        </span>
+                        <span class="theme-switcher__dark">
+                            <svg width="18" height="18">
+                                <use href="#icon-dark"></use>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <a href="#" class="link-underline">Menu</a>
+            </header>
+            <main>
+                <section class="hero">
+                    <div class="hero__background">
+                        <div class="hero__content">
+                            <h1 class="hero__title">
+                                <em class="accent">Enjoy</em> premium coffee at our charming cafe
+                            </h1>
+                            <p class="hero__text">
+                                With its inviting atmosphere and delicious coffee options, the
+                                Coffee House Resource is a popular destination for coffee lovers and
+                                those seeking a warm and inviting space to enjoy their favorite
+                                beverage.
+                            </p>
+                            <a href="#" class="button-primary">Menu</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="favorite">
+                    <h2 class="favorite__title">
+                        Choose your <em class="accent">favorite</em> coffee
+                    </h2>
+                    <div class="slider">
+                        <div class="slider__row">
+                            <div class="slider__content">
+                                <img
+                                    class="slider-image"
+                                    src="src/assets/img/slider/coffee-slider-1.png"
+                                    alt="coffee-slider-1" />
+                                <h3 class="slider__title">S’mores Frappuccino</h3>
+                                <p class="slider__text">
+                                    This new drink takes an espresso and mixes it with brown sugar
+                                    and cinnamon before being topped with oat milk.
+                                </p>
+                                <div class="slider__price">$5.50</div>
+                            </div>
+                            <div class="slider__content">
+                                <img
+                                    class="slider-image"
+                                    src="src/assets/img/slider/coffee-slider-1.png"
+                                    alt="coffee-slider-1" />
+                                <h3 class="slider__title">S’mores Frappuccino</h3>
+                                <p class="slider__text">
+                                    This new drink takes an espresso and mixes it with brown sugar
+                                    and cinnamon before being topped with oat milk.
+                                </p>
+                                <div class="slider__price">$5.50</div>
+                            </div>
+                            <div class="slider__content">
+                                <img
+                                    class="slider-image"
+                                    src="src/assets/img/slider/coffee-slider-1.png"
+                                    alt="coffee-slider-1" />
+                                <h3 class="slider__title">S’mores Frappuccino</h3>
+                                <p class="slider__text">
+                                    This new drink takes an espresso and mixes it with brown sugar
+                                    and cinnamon before being topped with oat milk.
+                                </p>
+                                <div class="slider__price">$5.50</div>
+                            </div>
+                        </div>
+                        <button class="button-slider slider__button-prev">
+                            <svg width="24" height="24">
+                                <use href="#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                        <button class="button-slider slider__button-next">
+                            <svg width="24" height="24">
+                                <use href="#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                        <div class="slider__markers">
+                            <button class="slider__marker active"></button>
+                            <button class="slider__marker"></button>
+                            <button class="slider__marker"></button>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="gallery">
+                        <div class="gallery__column">
+                            <img
+                                class="gallery__item gallery__item--tall"
+                                src="src/assets/img/about/about-1.png"
+                                alt="" />
+                            <img
+                                class="gallery__item gallery__item--short"
+                                src="src/assets/img/about/about-2.png"
+                                alt="" />
+                        </div>
+                        <div class="gallery__column">
+                            <img
+                                class="gallery__item gallery__item--short"
+                                src="src/assets/img/about/about-3.png"
+                                alt="" />
+                            <img
+                                class="gallery__item gallery__item--tall"
+                                src="src/assets/img/about/about-4.png"
+                                alt="" />
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer id="footer"><h1>FOOTER</h1></footer>
+        </div>
+        <script type="module" src="/src/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+html.dark {
+    --color-text-primary: #{$color-dark-text-primary};
+    --color-text-accent: #{$color-dark-text-accent};
+    --color-text-inverse: #{$color-dark-text-inverse};
+    --color-bg-page: #{$color-dark-bg-page};
+    --color-dark-border-primary: #{$color-dark-border-primary};
+    --color-dark-border-inverse: #{$color-dark-border-inverse};
+    --color-bg-container: #{$color-dark-bg-container};
+}

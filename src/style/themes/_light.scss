@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+
+:root,
+html.light {
+    --color-text-primary: #{$color-text-primary};
+    --color-text-accent: #{$color-text-accent};
+    --color-text-inverse: #{$color-text-inverse};
+    --color-bg-page: #{$color-bg-page};
+    --color-border-primary: #{$color-border-primary};
+    --color-border-inverse: #{$color-border-inverse};
+    --color-bg-container: #{$color-bg-container};
+}

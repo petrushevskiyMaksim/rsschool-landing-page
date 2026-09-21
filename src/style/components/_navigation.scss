@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+.navigation__list {
+    display: flex;
+    gap: 40px;
+}
+
+.navigation__link {
+    @include link-underline();
+}

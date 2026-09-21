@@ -1,0 +1,26 @@
+.hero {
+    padding: 20px 0 50px 0;
+}
+
+.hero__background {
+    width: 100%;
+    min-height: 644px;
+    padding: 100px;
+    border-radius: 40px;
+    background-image: url('../../../assets/img/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    max-width: 540px;
+}
+
+.hero__title,
+.hero__text {
+    color: var(--color-text-inverse);
+}

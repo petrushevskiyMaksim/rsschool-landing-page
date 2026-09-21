@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.link-underline {
+    @include link-underline();
+    display: flex;
+    align-items: center;
+    padding-right: 28px;
+    background-image: url('../../assets/icons/coffee-cup.svg');
+    background-position: top right;
+    background-repeat: no-repeat;
+}

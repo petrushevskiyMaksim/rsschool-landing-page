@@ -1,0 +1,16 @@
+.logo {
+    display: inline-flex;
+}
+
+.logo-icon {
+    width: 100px;
+    height: 60px;
+}
+
+.logo-word {
+    color: var(--color-text-primary);
+}
+
+.logo-rect {
+    color: var(--color-text-accent);
+}
