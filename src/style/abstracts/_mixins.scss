@@ -1,4 +1,5 @@
-@use 'placeholders';
+@use 'placeholders' as *;
+@use 'constants' as *;
 
 @mixin font($size: 1.6rem, $weight: 400, $height: 150%, $style: normal) {
     font-size: $size;
@@ -26,5 +27,41 @@
 
     &:hover::after {
         transform: scaleX(1);
+    }
+}
+
+@mixin media-laptop {
+    @media (max-width: $laptop-width) {
+        @content;
+    }
+}
+
+@mixin media-middle {
+    @media (max-width: $middle-width) {
+        @content;
+    }
+}
+
+@mixin media-table {
+    @media (max-width: $table-width) {
+        @content;
+    }
+}
+
+@mixin media-table-small {
+    @media (max-width: $table-small-width) {
+        @content;
+    }
+}
+
+@mixin media-mobile {
+    @media (max-width: $mobile-width) {
+        @content;
+    }
+}
+
+@mixin media-small-mobile {
+    @media (max-width: $mobile-small-width) {
+        @content;
     }
 }

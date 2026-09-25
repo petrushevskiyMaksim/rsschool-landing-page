@@ -15,10 +15,18 @@ body {
 
 h1 {
     @include font(7.2rem, 600, 105%, normal);
+
+    @include media-table-small {
+        @include font(4.2rem, 600, 115%, normal);
+    }
 }
 
 h2 {
     @include font(6rem, 600, 125%);
+
+    @include media-table-small {
+        @include font(3.2rem, 600, 125%, normal);
+    }
 }
 
 h3 {

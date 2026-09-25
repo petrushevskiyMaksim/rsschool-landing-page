@@ -4,6 +4,10 @@
     display: flex;
     justify-content: center;
     gap: 40px;
+
+    @include media-table {
+        flex-wrap: wrap;
+    }
 }
 
 .gallery__col {
@@ -19,6 +23,16 @@
 
 .col-right > :nth-child(odd) {
     height: 430px;
+}
+
+@include media-table {
+    .col-left > :not(:first-child) {
+        display: none;
+    }
+
+    .col-right > :not(:last-child) {
+        display: none;
+    }
 }
 
 .gallery__item {

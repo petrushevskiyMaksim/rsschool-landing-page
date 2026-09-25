@@ -1,3 +1,5 @@
+@use '../../abstracts' as *;
+
 .hero {
     padding: 20px 0 50px 0;
 }
@@ -11,6 +13,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @include media-laptop {
+        padding: 100px 60px;
+    }
+    @include media-table-small {
+        padding: 60px 16px;
+        min-height: 0;
+    }
 }
 
 .hero__content {

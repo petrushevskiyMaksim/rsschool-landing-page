@@ -21,6 +21,10 @@
 
 .slider-image {
     max-width: 480px;
+
+    @include media-mobile {
+        max-width: 348px;
+    }
 }
 
 .slider__title {
@@ -44,10 +48,12 @@
         background-color: var(--color-bg-container);
     }
 }
+
 .slider__button-prev {
     transform: rotate(180deg);
     left: 0;
 }
+
 .slider__button-next {
     right: 0;
 }

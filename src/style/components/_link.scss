@@ -8,4 +8,8 @@
     background-image: url('../../assets/icons/coffee-cup.svg');
     background-position: top right;
     background-repeat: no-repeat;
+
+    @include media-middle {
+        display: none;
+    }
 }

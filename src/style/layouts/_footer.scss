@@ -9,6 +9,10 @@
 .footer__social {
     max-width: 530px;
     margin-right: 100px;
+
+    @include media-table {
+        margin-right: 0;
+    }
 }
 
 .footer__wrapper {
@@ -16,6 +20,18 @@
     align-items: center;
     padding: 100px;
     margin-top: 50px;
+
+    @include media-table {
+        padding: 100px 60px;
+        flex-direction: column;
+        align-items: normal;
+        row-gap: 100px;
+    }
+
+    @include media-mobile {
+        padding: 60px 16px;
+        row-gap: 40px;
+    }
 }
 
 .footer__social-title {
@@ -42,5 +58,5 @@
 }
 
 .footer__contacts-link {
-    @include link-underline();
+    @include link-underline($offset: 4px);
 }
