@@ -1,0 +1,19 @@
+@use '../abstracts' as *;
+
+.button-social {
+    display: inline-flex;
+    padding: 18px;
+    border: 1px solid var(--color-border-primary);
+    color: var(--color-text-inverse);
+    border-radius: 100px;
+    @extend %transition;
+
+    &:hover {
+        background-color: var(--color-bg-page);
+
+        & .button-social__icon {
+            color: var(--color-text-primary);
+        }
+    }
+}
+

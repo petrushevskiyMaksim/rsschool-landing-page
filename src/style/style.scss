@@ -6,6 +6,7 @@
 
 @use 'layouts/wrapper';
 @use 'layouts/header';
+@use 'layouts/footer';
 
 @use 'components/logo';
 @use 'components/navigation';
@@ -13,9 +14,12 @@
 @use 'components/link';
 @use 'components/button-primary';
 @use 'components/button-slider';
+@use 'components/button-download';
+@use 'components/button_social';
 @use 'components/slider';
 @use 'components/gallery';
 
 @use 'pages/home/hero';
 @use 'pages/home/favorite';
 @use 'pages/home/about';
+@use 'pages/home/download-app';

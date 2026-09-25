@@ -21,15 +21,19 @@ h2 {
     @include font(6rem, 600, 125%);
 }
 
-.accent {
-    color: var(--color-text-accent);
-    font-style: italic;
-}
-
 h3 {
     @include font(2.4rem, 600, 125%);
 }
 
 a {
     font-weight: 600;
+}
+
+.accent {
+    color: var(--color-text-accent);
+    font-style: italic;
+}
+
+.caption {
+    @include font(1rem, 600, 140%, normal);
 }

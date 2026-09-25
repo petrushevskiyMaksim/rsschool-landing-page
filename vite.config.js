@@ -17,7 +17,7 @@ export default defineConfig({
     plugins: [
         createSvgIconsPlugin({
             // Папка, в которой лежат иконки
-            iconDirs: [path.resolve(process.cwd(), 'src/assets/icons')],
+            iconDirs: [path.resolve(process.cwd(), 'src/assets/icons/')],
             // Формат ID, который будет использоваться в <use>
             symbolId: 'icon-[name]',
         }),

@@ -1,0 +1,46 @@
+@use '../abstracts' as *;
+
+.footer {
+    color: var(--color-text-inverse);
+    background-color: var(--color-bg-container);
+    border-radius: 40px;
+}
+
+.footer__social {
+    max-width: 530px;
+    margin-right: 100px;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    margin-top: 50px;
+}
+
+.footer__social-title {
+    margin-bottom: 40px;
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 12px;
+}
+
+.footer__contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer__contacts-title {
+    margin-bottom: 40px;
+}
+
+.footer__contacts-item {
+    font-weight: 600;
+}
+
+.footer__contacts-link {
+    @include link-underline();
+}

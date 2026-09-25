@@ -1,0 +1,18 @@
+.mobile-app {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-app__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    max-width: 630px;
+    margin-right: auto;
+}
+
+.mobile-app__buttons {
+    display: flex;
+    gap: 20px;
+}
