@@ -1,0 +1,44 @@
+@use '../abstracts' as *;
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.gallery__col {
+    max-width: 660px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.col-left > :nth-child(even) {
+    height: 430px;
+}
+
+.col-right > :nth-child(odd) {
+    height: 430px;
+}
+
+.gallery__item {
+    max-height: 590px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &:hover img {
+        @extend %transition_scale;
+
+        transform: scale(100%);
+    }
+}
+
+.gallery__item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transform: scale(110%);
+    @extend %transition_scale;
+}
