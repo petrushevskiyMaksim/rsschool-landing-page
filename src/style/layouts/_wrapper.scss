@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.wrapper {
+    max-width: $content-width + 80px;
+    padding: 0 40px;
+    margin: 0 auto;
+
+    @include media-table-small {
+        padding: 0 15px;
+    }
+}

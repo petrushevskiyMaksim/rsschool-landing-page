@@ -1,0 +1,36 @@
+@use '../../abstracts' as *;
+
+.hero {
+    padding: 20px 0 50px 0;
+}
+
+.hero__background {
+    width: 100%;
+    min-height: 644px;
+    padding: 100px;
+    border-radius: 40px;
+    background-image: url('../../../assets/img/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include media-laptop {
+        padding: 100px 60px;
+    }
+    @include media-table-small {
+        padding: 60px 16px;
+        min-height: 0;
+    }
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    max-width: 540px;
+}
+
+.hero__title,
+.hero__text {
+    color: var(--color-text-inverse);
+}

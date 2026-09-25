@@ -1,0 +1,50 @@
+@use '../../abstracts' as *;
+
+.mobile-app {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+
+    @include media-laptop {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 100px;
+    }
+    @include media-table-small {
+        & img {
+            width: 348px;
+        }
+    }
+    @include media-mobile {
+        gap: 40px;
+    }
+}
+
+.mobile-app__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    max-width: 630px;
+    margin-right: auto;
+
+    @include media-laptop {
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+    }
+    @include media-table {
+        margin: 0;
+        margin-right: auto;
+        text-align: left;
+        align-items: start;
+    }
+}
+
+.mobile-app__buttons {
+    display: flex;
+    gap: 20px;
+
+    @include media-table-small {
+        flex-wrap: wrap;
+    }
+}

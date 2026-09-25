@@ -1,0 +1,33 @@
+// --------------------------------------------- Light Theme
+// Color text
+$color-text-primary: rgba(64, 63, 61, 1);
+$color-text-accent: rgba(176, 144, 122, 1);
+$color-text-inverse: rgba(225, 212, 201, 1);
+// Color bg
+$color-bg-page: rgba(225, 212, 201, 1);
+$color-bg-container: rgba(102, 95, 85, 1);
+$color-bg-overlay: rgba(64, 63, 61, 0.8);
+// Color border
+$color-border-primary: rgba(193, 182, 173, 1);
+$color-border-inverse: rgba(102, 95, 85, 1);
+
+// --------------------------------------------- Dark Theme
+// Color text
+$color-dark-text-primary: rgba(225, 212, 201, 1);
+$color-dark-text-accent: rgba(176, 144, 122, 1);
+$color-dark-text-inverse: rgba(225, 212, 201, 1);
+// Color bg
+$color-dark-bg-page: rgba(41, 40, 38, 1);
+$color-dark-bg-container: rgba(64, 63, 61, 1);
+$color-dark-bg-overlay: rgba(41, 40, 38, 0.8);
+// Color border
+$color-dark-border-primary: rgba(102, 95, 85, 1);
+$color-dark-border-inverse: rgba(193, 182, 173, 1);
+
+$content-width: 1360px;
+$laptop-width: 1120px;
+$middle-width: 850px;
+$table-width: 768px;
+$table-small-width: 620px;
+$mobile-width: 414px;
+$mobile-small-width: 320px;

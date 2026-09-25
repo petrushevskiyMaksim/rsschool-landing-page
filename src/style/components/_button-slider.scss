@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+.button-slider {
+    position: absolute;
+    display: inline-flex;
+    padding: 18px;
+    border: 1px solid var(--color-border-inverse);
+    border-radius: 100px;
+
+    @include media-table-small {
+        display: none;
+    }
+}
