@@ -3,6 +3,13 @@
 .navigation__list {
     display: flex;
     gap: 40px;
+
+    @include media-middle {
+        flex-direction: column;
+        text-align: center;
+        gap: 60px;
+        margin-bottom: 100px;
+    }
 }
 
 .navigation__link {

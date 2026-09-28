@@ -11,6 +11,10 @@ body {
     font-family: Inter, system-ui, sans-serif;
     background-color: var(--color-bg-page);
     color: var(--color-text-primary);
+
+    &.is_open {
+        overflow-y: hidden;
+    }
 }
 
 h1 {
