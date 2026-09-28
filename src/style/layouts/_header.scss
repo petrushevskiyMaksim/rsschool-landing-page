@@ -1,9 +1,17 @@
 @use '../abstracts' as *;
 
 .header {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 24px;
+
+    @include media-middle {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: var(--color-bg-page);
+    }
 }
 
 .header__wrapper {
